@@ -1,15 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Nav,NavItem} from 'reactstrap'
 import './App.css';
 
 function App() {
   return (
+    <div>
+    <Nav>
+        <NavItem>Services</NavItem>
+        <NavItem>Connect</NavItem>
+        <NavItem>Projects</NavItem>
+    </Nav>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         
         
       </header>
+    </div>
     </div>
   );
 }
