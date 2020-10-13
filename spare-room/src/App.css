@@ -1,0 +1,11 @@
+.Nav {
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+ul {
+  padding: 0;
+}
