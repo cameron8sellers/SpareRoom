@@ -1,19 +1,25 @@
 import React from 'react';
 import {Nav,NavItem} from 'reactstrap'
-import {hamburgerMenu} from './menus/hamburger'
+
 import './App.css';
+import {Route} from 'react-router-dom'
+
+
+import HomePage from './components/homepage';
 
 function App() {
+  
   return (
     <div>
-     
-    <Nav className="Nav">
+      <Nav className="Nav">
         <NavItem>Services</NavItem>
         <NavItem>Connect</NavItem>
         <NavItem>Projects</NavItem>
-    </Nav>
+      </Nav>
+     
     
-    
+    <Route exact path = "/" component={HomePage} />
+
     
     </div>
   );
