@@ -1,10 +1,83 @@
 .logo {
   width: 100%;
-  z-index: -1;
-  margin-top: -300px;
+
+  margin-top: 55px;
 }
-@media (max-width: 426px) {
+@media (min-width: 426px) {
   .logo {
-    margin-top: 0px;
+    margin-top: -300px;
   }
+  .seo-card,
+  .design-card,
+  .custom-software-card {
+    height: 5em;
+    width: 25%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .card-titles {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    text-align: left;
+  }
+  .card-body {
+    text-align: left;
+  }
+  .services-cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -55px;
+    flex-direction: row !important;
+    width: 75%;
+  }
+}
+
+.services-cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+.seo-card,
+.design-card,
+.custom-software-card {
+  height: 5em;
+
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+  padding: 12px;
+  width: 100%;
+}
+.card-titles {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.card-body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+
+  margin: 5%;
+}
+.about-card-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  margin: 5%;
+}
+.about-card-body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+
+  margin: 5%;
+}
+.about-us-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }

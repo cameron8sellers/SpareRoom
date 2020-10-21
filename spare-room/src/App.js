@@ -21,6 +21,7 @@ function App() {
       : (
         <div>
         <Nav className="Nav">
+        <NavItem>Home</NavItem>
         <NavItem>Services</NavItem>
         <NavItem>Connect</NavItem>
         <NavItem>Projects</NavItem>
@@ -33,7 +34,12 @@ function App() {
     
     <Route exact path = "/" component={HomePage} />
 
-    
+    <div className='footer'>
+      
+        <li>720.584.5636</li>
+        <li>spareroomwebdev@gmail.com</li>
+      
+    </div>
     </div>
   )
 }
