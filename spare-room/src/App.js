@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav,NavItem} from 'reactstrap'
+import {Nav,NavItem, NavLink} from 'reactstrap'
 import {useMediaQuery} from 'react-responsive'
 import Menu from './menu'
 import './App.css';
@@ -8,6 +8,8 @@ import {Route} from 'react-router-dom'
 
 
 import HomePage from './components/homepage';
+import ConnectPage from './components/connect'
+
 
 function App() {
   const isMobile = useMediaQuery({ query: "(max-width:426px)" });
@@ -17,15 +19,18 @@ function App() {
         <div>
         <Menu />
         </div>
-      )
-      : (
-        <div>
-        <Nav className="Nav">
-        <NavItem>Home</NavItem>
-        <NavItem>Services</NavItem>
-        <NavItem>Connect</NavItem>
-        <NavItem>Projects</NavItem>
-      </Nav>
+      ) : (
+        <div className='Nav'>
+        
+          <a href='/'>Home</a>
+          
+          <a href='/'>Services</a>
+          
+          <a href='/connect'>Connect</a>
+          
+          <a href='/'>Projects</a>
+          
+      
       </div>
       )
 
@@ -33,6 +38,7 @@ function App() {
      
     
     <Route exact path = "/" component={HomePage} />
+    <Route path ='/connect' component={ConnectPage} />
 
     <div className='footer'>
       
