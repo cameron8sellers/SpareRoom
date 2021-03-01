@@ -42,8 +42,10 @@ function App() {
 
     <div className='footer'>
       
-        <li>720.584.5636</li>
+        <li>720.697.8083</li>
+        <li className='break'>//</li>
         <li>spareroomwebdev@gmail.com</li>
+        
       
     </div>
     </div>

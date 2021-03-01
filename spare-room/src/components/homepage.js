@@ -1,6 +1,6 @@
 import React from 'react'
 import {useMediaQuery} from 'react-responsive'
-import {Card, CardImg,CardBody,CardTitle} from 'reactstrap'
+import {Card, CardImg,CardBody,CardTitle,Button} from 'reactstrap'
 import './homepage.css'
 
 
@@ -36,14 +36,17 @@ const isMobile = useMediaQuery({ query: "(max-width:426px)" });
                 </Card>
                 <Card className='seo-card'>
                             <CardTitle className='card-titles'>SEO</CardTitle>
-                            <CardBody className='card-body'>Be discoverable to potential customers and expand your online presence. Be one of the top search reults in your area and keep growing.</CardBody>
+                            <CardBody className='card-body'>Be discovered to potential customers and expand your online presence. Be one of the top search reults in your area and keep growing.</CardBody>
                 </Card>
     </div>
     <div className='about-us-container'>
                 <Card>
                             <CardTitle className='about-card-title'>About Us</CardTitle>
-                            <CardBody className='about-card-body'>At Spare Room we have a passion for what we do and Our goal is to give our clients the best experience possible. We want to create the soulutions for any of your tech needs. We want to provide a personal experience from top to bottom and ensure our clients are taken care of. </CardBody>
+                            <CardBody className='about-card-body'>At Spare Room we have a passion for what we do and Our goal is to give our clients the best experience possible. We want to create the soulutions for your online needs and provide a personal experience from top to bottom and ensure our clients are taken care of. </CardBody>
                 </Card>
+    </div>
+    <div className='connect-button-container'>
+      <Button className='connect-button'>Connect!</Button>
     </div>
     </div>
   )}
